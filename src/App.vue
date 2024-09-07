@@ -24,7 +24,12 @@ const decrease = () => {
 };
 
 const showValue = () => {
-  todoList.value.push(inputValue.value);
+  const text = inputValue.value;
+
+  todoList.value.push({
+    text: text,
+    don: false
+  });
   console.log(todoList.value);
 };
 
